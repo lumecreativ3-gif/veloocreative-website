@@ -91,7 +91,7 @@ export default function Footer() {
             letterSpacing: "0.05em",
           }}
         >
-          Built for the creative community · veloocreative.com
+          VIVIANA MARTINEZ
         </p>
       </div>
     </footer>
