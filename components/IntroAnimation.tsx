@@ -18,17 +18,17 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
     // Phase timeline
     const timers: NodeJS.Timeout[] = [];
 
-    timers.push(setTimeout(() => setPhase("dots-split"), 700));
-    timers.push(setTimeout(() => setPhase("dots-arc"), 1400));
-    timers.push(setTimeout(() => setPhase("dots-collide"), 2800));
-    timers.push(setTimeout(() => setPhase("logo-burst"), 3500));
-    timers.push(setTimeout(() => setPhase("prompt"), 4200));
+    timers.push(setTimeout(() => setPhase("dots-split"), 455));
+    timers.push(setTimeout(() => setPhase("dots-arc"), 910));
+    timers.push(setTimeout(() => setPhase("dots-collide"), 1820));
+    timers.push(setTimeout(() => setPhase("logo-burst"), 2275));
+    timers.push(setTimeout(() => setPhase("prompt"), 2730));
 
     // Auto-transition after prompt appears
     autoTimerRef.current = setTimeout(() => {
       setPhase("done");
       setTimeout(onComplete, 600);
-    }, 6400);
+    }, 4160);
 
     return () => {
       timers.forEach(clearTimeout);
@@ -78,7 +78,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
           onClick={handleClick}
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.7, ease: "easeInOut" }}
+          transition={{ duration: 0.46, ease: "easeInOut" }}
         >
           {/* Radial glow background */}
           <div
@@ -86,7 +86,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
               position: "absolute",
               inset: 0,
               background:
-                "radial-gradient(ellipse 60% 60% at 50% 50%, rgba(27,79,228,0.15) 0%, transparent 70%)",
+                "radial-gradient(ellipse 60% 60% at 50% 50%, rgba(27,79,228,0.10) 0%, transparent 70%)",
               pointerEvents: "none",
             }}
           />
@@ -118,12 +118,12 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
               }
               transition={
                 phase === "dots-arc"
-                  ? { duration: 1.8, ease: "easeInOut" }
+                  ? { duration: 1.17, ease: "easeInOut" }
                   : phase === "dots-collide"
-                  ? { duration: 0.45, ease: "easeIn" }
+                  ? { duration: 0.29, ease: "easeIn" }
                   : phase === "logo-burst"
-                  ? { duration: 0.3, ease: "easeOut" }
-                  : { duration: 0.55, ease: "easeOut" }
+                  ? { duration: 0.20, ease: "easeOut" }
+                  : { duration: 0.36, ease: "easeOut" }
               }
             />
 
@@ -143,12 +143,12 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
               }
               transition={
                 phase === "dots-arc"
-                  ? { duration: 1.8, ease: "easeInOut" }
+                  ? { duration: 1.17, ease: "easeInOut" }
                   : phase === "dots-collide"
-                  ? { duration: 0.45, ease: "easeIn" }
+                  ? { duration: 0.29, ease: "easeIn" }
                   : phase === "logo-burst"
-                  ? { duration: 0.3, ease: "easeOut" }
-                  : { duration: 0.55, ease: "easeOut" }
+                  ? { duration: 0.20, ease: "easeOut" }
+                  : { duration: 0.36, ease: "easeOut" }
               }
             />
 
@@ -159,7 +159,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 4, opacity: [0, 1, 0] }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  transition={{ duration: 0.33, ease: "easeOut" }}
                   style={{
                     position: "absolute",
                     width: 14,
@@ -182,7 +182,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 initial={{ scale: 0.3, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 1.1, opacity: 0 }}
-                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.39, ease: [0.16, 1, 0.3, 1] }}
                 style={{
                   position: "absolute",
                   display: "flex",
@@ -195,7 +195,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 <motion.div
                   initial={{ scale: 0, opacity: 1 }}
                   animate={{ scale: 6, opacity: 0 }}
-                  transition={{ duration: 0.7, ease: "easeOut" }}
+                  transition={{ duration: 0.46, ease: "easeOut" }}
                   style={{
                     position: "absolute",
                     width: 60,
@@ -207,7 +207,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 />
 
                 <div style={{ textAlign: "center" }}>
-                  <img src="/logo.png" alt="Velo Creative" style={{ height: "80px" }} />
+                  <img src="/1.png" alt="Velo Creative" style={{ height: "80px" }} />
                 </div>
 
                 {/* Subtle underline accent */}
@@ -232,13 +232,13 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: [0, 1, 0.7, 1] }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.52, ease: "easeOut" }}
                 style={{
                   position: "absolute",
-                  bottom: "12%",
+                  bottom: "40px",
                   left: "50%",
                   transform: "translateX(-50%)",
-                  color: "rgba(255,255,255,0.55)",
+                  color: "rgba(27,79,228,0.75)",
                   fontFamily: "'Space Grotesk', sans-serif",
                   fontSize: "13px",
                   letterSpacing: "0.15em",
