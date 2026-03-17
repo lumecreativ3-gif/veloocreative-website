@@ -28,7 +28,7 @@ export default function WhatIsVelo() {
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-stretch">
 
           {/* Left — What is Velo */}
           <motion.div
@@ -39,7 +39,7 @@ export default function WhatIsVelo() {
             <span
               style={{
                 fontFamily: "'Space Grotesk', sans-serif",
-                fontSize: "12px",
+                fontSize: "15px",
                 fontWeight: 500,
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
@@ -52,7 +52,7 @@ export default function WhatIsVelo() {
               style={{
                 fontFamily: "'Space Grotesk', sans-serif",
                 fontWeight: 700,
-                fontSize: "clamp(36px, 5vw, 56px)",
+                fontSize: "clamp(46px, 6vw, 72px)",
                 lineHeight: 1.05,
                 letterSpacing: "-0.03em",
                 color: "#0a0a0a",
@@ -66,7 +66,7 @@ export default function WhatIsVelo() {
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: "15px",
+                fontSize: "18px",
                 color: "#555",
                 lineHeight: 1.75,
               }}
@@ -78,7 +78,7 @@ export default function WhatIsVelo() {
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
-                fontSize: "15px",
+                fontSize: "18px",
                 color: "#555",
                 lineHeight: 1.75,
                 marginTop: 16,
@@ -111,8 +111,8 @@ export default function WhatIsVelo() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="hidden lg:flex flex-col items-center justify-center py-8"
-            style={{ gap: "4px" }}
+            className="hidden lg:flex flex-col items-center justify-between py-0"
+            style={{ gap: "0" }}
           >
             {["NEW", "NEW", "NEW", "NEW", "NEW"].map((word, i) => (
               <motion.div
@@ -161,7 +161,7 @@ export default function WhatIsVelo() {
             <span
               style={{
                 fontFamily: "'Space Grotesk', sans-serif",
-                fontSize: "12px",
+                fontSize: "15px",
                 fontWeight: 500,
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
@@ -174,7 +174,7 @@ export default function WhatIsVelo() {
               style={{
                 fontFamily: "'Space Grotesk', sans-serif",
                 fontWeight: 700,
-                fontSize: "24px",
+                fontSize: "clamp(28px, 3.5vw, 42px)",
                 color: "#0a0a0a",
                 marginTop: 12,
                 marginBottom: 32,
@@ -183,16 +183,20 @@ export default function WhatIsVelo() {
               Four simple steps<br />to collaboration.
             </h3>
 
-            <div className="flex flex-col gap-0">
+            <div className="flex flex-col gap-3">
               {steps.map((step, i) => (
                 <motion.div
                   key={step.num}
                   initial={{ opacity: 0, x: 20 }}
                   animate={inView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.4 + i * 0.12, duration: 0.5 }}
-                  className="group flex gap-5 items-start py-5"
+                  className="group flex gap-5 items-start py-5 px-5 rounded-2xl"
                   style={{
-                    borderBottom: i < steps.length - 1 ? "1px solid rgba(27,79,228,0.08)" : "none",
+                    background: "rgba(255,255,255,0.72)",
+                    backdropFilter: "blur(18px)",
+                    WebkitBackdropFilter: "blur(18px)",
+                    border: "1px solid rgba(255,255,255,0.9)",
+                    boxShadow: "0 4px 24px rgba(27,79,228,0.08), inset 0 1px 0 rgba(255,255,255,0.95)",
                   }}
                 >
                   {/* Step number */}
