@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo + copyright */}
           <div className="flex flex-col gap-2 items-center md:items-start">
-            <img src="/1.png" alt="Velo Creative" style={{ height: "36px" }} />
+            <img src="/1.png" alt="Velo Creative" style={{ height: "48px" }} />
             <p
               style={{
                 fontFamily: "'Inter', sans-serif",
