@@ -125,7 +125,7 @@ export default function QuoteSection() {
             textTransform: "uppercase",
           }}
         >
-          Velo Creative — veloocreative.com
+          Viviana Martinez
         </motion.p>
       </div>
     </section>
