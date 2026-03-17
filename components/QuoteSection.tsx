@@ -12,7 +12,7 @@ export default function QuoteSection() {
       ref={ref}
       className="relative py-32 px-6 lg:px-8 overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, transparent 0%, rgba(5,13,45,0.93) 8%, rgba(5,13,45,0.96) 50%, rgba(5,13,45,0.93) 92%, transparent 100%)",
+        background: "linear-gradient(180deg, rgba(5,13,45,0.96) 0%, rgba(5,13,45,0.96) 92%, transparent 100%)",
       }}
     >
       {/* Background particle dots */}

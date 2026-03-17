@@ -35,7 +35,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center group">
-            <img src="/1.png" alt="Velo Creative" style={{ height: "40px" }} />
+            <img src="/1.png" alt="Velo Creative" style={{ height: "52px" }} />
           </a>
 
           {/* Desktop nav */}

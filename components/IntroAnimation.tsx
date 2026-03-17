@@ -207,7 +207,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 />
 
                 <div style={{ textAlign: "center" }}>
-                  <img src="/1.png" alt="Velo Creative" style={{ height: "80px" }} />
+                  <img src="/1.png" alt="Velo Creative" style={{ height: "100px" }} />
                 </div>
 
                 {/* Subtle underline accent */}
