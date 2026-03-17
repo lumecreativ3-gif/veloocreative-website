@@ -34,32 +34,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-baseline gap-1 group">
-            <span
-              style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 700,
-                fontSize: "22px",
-                color: "#0a0a0a",
-                letterSpacing: "-0.02em",
-                lineHeight: 1,
-              }}
-            >
-              velo
-            </span>
-            <span
-              style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 600,
-                fontSize: "11px",
-                color: "#1B4FE4",
-                letterSpacing: "0.3em",
-                fontStyle: "italic",
-                lineHeight: 1,
-              }}
-            >
-              CREATIVE
-            </span>
+          <a href="#" className="flex items-center group">
+            <img src="/logo.png" alt="Velo Creative" style={{ height: "36px" }} />
           </a>
 
           {/* Desktop nav */}

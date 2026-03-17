@@ -207,31 +207,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
                 />
 
                 <div style={{ textAlign: "center" }}>
-                  <div
-                    style={{
-                      fontFamily: "'Space Grotesk', sans-serif",
-                      fontWeight: 700,
-                      fontSize: "clamp(52px, 8vw, 96px)",
-                      color: "#ffffff",
-                      letterSpacing: "-0.03em",
-                      lineHeight: 1,
-                    }}
-                  >
-                    velo
-                  </div>
-                  <div
-                    style={{
-                      fontFamily: "'Space Grotesk', sans-serif",
-                      fontWeight: 600,
-                      fontSize: "clamp(18px, 2.5vw, 32px)",
-                      color: "#1B4FE4",
-                      letterSpacing: "0.35em",
-                      fontStyle: "italic",
-                      marginTop: "-6px",
-                    }}
-                  >
-                    CREATIVE
-                  </div>
+                  <img src="/logo.png" alt="Velo Creative" style={{ height: "80px" }} />
                 </div>
 
                 {/* Subtle underline accent */}

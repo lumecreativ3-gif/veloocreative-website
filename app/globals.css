@@ -24,9 +24,17 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #ffffff;
+  background: linear-gradient(135deg, #ffffff, #e8f0fe, #c7d9fd, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   color: #0a0a0a;
   overflow-x: hidden;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* ---- Animated gradient mesh background ---- */
