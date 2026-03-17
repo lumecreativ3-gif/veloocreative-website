@@ -229,15 +229,16 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
           <AnimatePresence>
             {showPrompt && (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0 }}
                 animate={{ opacity: [0, 1, 0.7, 1] }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.52, ease: "easeOut" }}
                 style={{
                   position: "absolute",
                   bottom: "40px",
-                  left: "50%",
-                  transform: "translateX(-50%)",
+                  left: 0,
+                  right: 0,
+                  textAlign: "center",
                   color: "rgba(27,79,228,0.75)",
                   fontFamily: "'Space Grotesk', sans-serif",
                   fontSize: "13px",

@@ -153,7 +153,7 @@ export default function Hero() {
               textTransform: "uppercase",
             }}
           >
-            Invite-only creative community
+            Velo Creative
           </span>
         </motion.div>
 
