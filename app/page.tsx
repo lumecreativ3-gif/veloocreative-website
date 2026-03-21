@@ -11,6 +11,7 @@ import Features from "@/components/Features";
 import WhoWeAre from "@/components/WhoWeAre";
 import QuoteSection from "@/components/QuoteSection";
 import YourCreativityMatters from "@/components/YourCreativityMatters";
+import InquirySection from "@/components/InquirySection";
 import GetStartedCTA from "@/components/GetStartedCTA";
 import Footer from "@/components/Footer";
 
@@ -54,6 +55,7 @@ export default function HomePage() {
               <WhoWeAre />
               <QuoteSection />
               <YourCreativityMatters />
+              <InquirySection />
               <GetStartedCTA />
             </main>
 
